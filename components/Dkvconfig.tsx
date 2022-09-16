@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import DkvPicker from './DkvPicker'
+import DkvPicker from './DkvInput'
 
 const Dkvconfig = () => {
   return (
@@ -12,14 +12,14 @@ const Dkvconfig = () => {
                     <Text>Consomation Véhicule :  </Text>
                 </View>
                 <View style={styles.config_2}>
-                    <Text>Compteur</Text>
+                    <Text>Compteur : </Text>
                 </View>
             </View>
-            <View style={styles.picker_1}>
+            <View style={styles.input_1}>
                 <DkvPicker />
             </View>
 
-            <View style={styles.picker_2}>
+            <View style={styles.input_2}>
                 <DkvPicker />
             </View>
     </View>
@@ -50,17 +50,17 @@ const styles = StyleSheet.create({
         top: 80
     },
     config_1: {
-        top: -100
+        top: -100,
     },
     config_2: {
         top: -20
     },
-    picker_1:{
-        top:-75,
+    input_1:{
+        top:-69,
         left: 180
     },
-    picker_2:{
-        top:-25,
+    input_2:{
+        top:-5,
         left: 180
     }
 })

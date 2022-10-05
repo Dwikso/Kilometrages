@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native';
-import Dkv from './components/Dkv';
+import Dkv from './src/components/Dkv';
 
 export default function App() {
   return (

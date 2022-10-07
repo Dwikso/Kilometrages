@@ -1,11 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
 import Dkv from './src/components/Dkv';
+import ApContainer from './src/components/app-container'
+import Navigator from './src/'
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Dkv />
-    </View>
+    <AppContainer>
+      <Navigator/>
+    </AppContainer>
   );
 }
 
